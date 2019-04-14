@@ -1,5 +1,6 @@
 class TodosController < ApplicationController
   def index
+    @todos = Todo.all
   end
 
   def new
@@ -7,7 +8,7 @@ class TodosController < ApplicationController
   end
 
   def create
-    @todo = Todo.new(todos_params)
+    @todo = Todo.create(todos_params)
     # if @todo.save
       redirect_to todos_path
   #   else
