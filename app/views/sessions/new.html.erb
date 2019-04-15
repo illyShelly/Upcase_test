@@ -1,0 +1,10 @@
+<%= form_for :session, url: session_path do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.submit "Sign in" %>
+<% end %>
+
+
+<!-- 1. form using symbol session (we do not have an object User) -->
+<!-- 2. url to session_path -->
+<!-- 3. route create -->

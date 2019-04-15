@@ -13,4 +13,3 @@ end
 # scenario individual scenario for test -> capybara
 # 1. visit homepage and see something e.x.: <h1>"todos"
 # has css selector h1?
-#
